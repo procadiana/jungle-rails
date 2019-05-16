@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
   before_filter :authorize
   def show
     @order = Order.find(params[:id])
+
   end
 
   def create
@@ -51,6 +52,7 @@ class OrdersController < ApplicationController
         item_price: product.price,
         total_price: product.price * quantity
       )
+
     end
     order.save!
     order
