@@ -45,14 +45,15 @@
 
   </div>
     <div class="row" style="position:left">
+      <br>
       <h3>Reviews</h3>
       <ul>
       <% @reviews.each do |review| %>
-      <li>Name: <%= review%> </li>
+      <li>Name: <%= review.user.name %> </li>
       <li>Rating: <%= review.rating %> </li>
         <li>Review: <%= review.description %></li>
          <li>Date: <%= review.created_at.strftime("%Y-%m-%d") %></li>
-
+         <br>
       <% end %>
 
     </ul>

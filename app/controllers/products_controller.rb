@@ -7,8 +7,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find params[:id]
-    @reviews = @product.reviews
-
+    @reviews = @product.reviews.all.order(created_at: :desc)
   end
 
 end
