@@ -1,9 +1,7 @@
 class CartsController < ApplicationController
 
   def show
-    # if cart!
-    #   "Your cart is empty"
-    # end
+
   end
 
   def add_item
