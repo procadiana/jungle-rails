@@ -56,10 +56,11 @@
       <li>Rating: <%= review.rating %> </li>
         <li>Review: <%= review.description %></li>
          <li>Date: <%= review.created_at.strftime("%Y-%m-%d") %>
-
+         <% if current_user == review.user %>
           <%= link_to fa_icon('trash'),[@product, review] , class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %></li>
-         <br>
 
+         <% end %>
+          <br>
 
 
       <% end %>
