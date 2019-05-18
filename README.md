@@ -1,6 +1,25 @@
-# Jungle
+# :star2: :star2: Jungle :star2: :star2:
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+## The project has the following features
+
+### Homepage
+![register](https://github.com/procadiana/jungle-rails/blob/master/img/Products.png)
+
+### Login
+![register](https://github.com/procadiana/jungle-rails/blob/master/img/login.png)
+
+### Signup
+![register](https://github.com/procadiana/jungle-rails/blob/master/img/signup.png)
+
+### Admin - add product
+![register](https://github.com/procadiana/jungle-rails/blob/master/img/new_product.png)
+
+### Admin - add category
+![register](https://github.com/procadiana/jungle-rails/blob/master/img/add_categories.png)
+
+### Shopping Cart
+![register](https://github.com/procadiana/jungle-rails/blob/master/img/shopping_cart.png)
 
 
 ## Setup
