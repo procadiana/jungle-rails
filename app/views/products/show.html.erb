@@ -27,6 +27,7 @@
     </div>
     </div>
     <br><br>
+    <% if current_user.present? %>
     <div class="form" style="position:left">
 
       <%= form_for :review, url: product_reviews_path(@product) do |f| %>
@@ -42,6 +43,8 @@
        </dl>
        <% end %>
      </div>
+     <% end %>
+
 
   </div>
     <div class="row" style="position:left">
@@ -52,9 +55,15 @@
       <li>Name: <%= review.user.name %> </li>
       <li>Rating: <%= review.rating %> </li>
         <li>Review: <%= review.description %></li>
-         <li>Date: <%= review.created_at.strftime("%Y-%m-%d") %></li>
+         <li>Date: <%= review.created_at.strftime("%Y-%m-%d") %>
+
+          <%= link_to fa_icon('trash'),[@product, review] , class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %></li>
          <br>
+
+
+
       <% end %>
+
 
     </ul>
       </div>

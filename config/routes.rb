@@ -13,7 +13,6 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index, :show] do
     resources :reviews
-
   end
 
   resources :categories, only: [:show]
