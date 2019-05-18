@@ -9,12 +9,13 @@
 <body>
 
   <%= render 'layouts/top_nav' %>
-
+ <div class="login" style="position:relative;  margin-left:150px">
   <% if current_user %>
-    Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+    <h4>Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %></h4>
   <% else %>
-    <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+    <h3><%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %></h3>
   <% end %>
+</div>
 
 
 
