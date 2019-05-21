@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do
   describe 'Validations' do
 
-
     it "is valid with a name" do
       @category = Category.new
       product = Product.new(
@@ -14,8 +13,6 @@ RSpec.describe Product, type: :model do
       )
 
       expect(product).to be_valid
-
-
     end
 
 
